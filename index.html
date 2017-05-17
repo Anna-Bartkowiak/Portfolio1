@@ -12,19 +12,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
 </head>
 <body>
-	<nav>
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Brand</a>
-		</div>
-		
-		<ul>
-			<li class="item1"><a href="#" class="menu">Projekt 1</a></li>
-			<li class="item2"><a href="#" class="menu">Projekt 2</a></li>
-			<li class="item3"><a href="#" class="menu">Projekt 3</a></li>
-			<li class="item4"><a href="#" class="menu">O mnie</a></li>
-			<li class="item5"><a href="#" class="menu">Kontakt</a></li>
-		</ul>
-	</nav>
+	<header>
+		<a id="logo" href="#">Brand</a>
+		<nav>
+			<ul>
+				<li class="item1"><a href="#" class="menu">Projekt 1</a></li>
+				<li class="item2"><a href="#" class="menu">Projekt 2</a></li>
+				<li class="item3"><a href="#" class="menu">Projekt 3</a></li>
+				<li class="item4"><a href="#" class="menu">O mnie</a></li>
+				<li class="item5"><a href="#" class="menu">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	
 	<section class="jumbotron">
 		<h2>Cześć, nazywam się Ania Bartkowiak i jestem junior Front-end Developerem</h2>
 	</section>
@@ -100,13 +100,29 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at augue eget purus posuere euismod id ac ex. Etiam lacus erat, efficitur vel ante at, sodales sodales elit. Donec aliquet.</p>
 			</div>
 			<div class="col-m-6 pink">
-			<img src="img/brand1.png" alt="Projekty" title="Projekt1">
-			<button type="button" class="btn btn-purple">Otwórz</button>
+			<h2>Porozmawiajmy</h2>
+					<form class="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+
+						<div class="form-group">
+							<input type="name" class="form-control" id="name" placeholder="Name">
+						</div>
+
+						<div class="form-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+						</div>
+						
+						<div class="form-group">
+							<button type="submit" class="btn btn-info">Wyślij</button>
+						</div>
+					</form>
 			</div>
 			
 			<div class="row_icon">
-				<div class="col-m-12">
-					<i id="icon-angle violet" class="fa fa-angle-up green"></i>
+				<div class="col-m-12 black">
+					<i id="icon-angle violet" class="fa fa-angle-double-up green"></i>
 				</div>
 			</div>
 		</div>
