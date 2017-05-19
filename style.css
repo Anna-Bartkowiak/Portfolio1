@@ -22,31 +22,31 @@ body {
 	min-height: 1px;
 }
 
-.col-m-1 {width: 8.33%;} 
-.col-m-2 {width: 16.66%;} 
-.col-m-3 {width: 25%;} 
-.col-m-4 {width: 33.33%;} 
-.col-m-5 {width: 41.66%;} 
-.col-m-6 {width: 50%;} 
-.col-m-7 {width: 58.33%;} 
-.col-m-8 {width: 66.66%;} 
-.col-m-9 {width: 75%;} 
-.col-m-10 {width: 83.33%;} 
-.col-m-11 {width: 91.66%;} 
-.col-m-12 {width: 100%;} 
+.col-l-1 {width: 8.33%;} 
+.col-l-2 {width: 16.66%;} 
+.col-l-3 {width: 25%;} 
+.col-l-4 {width: 33.33%;} 
+.col-l-5 {width: 41.66%;} 
+.col-l-6 {width: 50%;} 
+.col-l-7 {width: 58.33%;} 
+.col-l-8 {width: 66.66%;} 
+.col-l-9 {width: 75%;} 
+.col-l-10 {width: 83.33%;} 
+.col-l-11 {width: 91.66%;} 
+.col-l-12 {width: 100%;} 
 
-.col-offset-0 {margin-left: 0;}
-.col-offset-1 {margin-left: 8.33%;}
-.col-offset-2 {margin-left: 16.66%;}
-.col-offset-3 {margin-left: 25%;}
-.col-offset-4 {margin-left: 33.33%;}
-.col-offset-5 {margin-left: 41.66%;}
-.col-offset-6 {margin-left: 50%;}
-.col-offset-7 {margin-left: 58.33%;}
-.col-offset-8 {margin-left: 66.66%;}
-.col-offset-9 {margin-left: 75%;}
-.col-offset-10 {margin-left: 83.33%;}
-.col-offset-11 {margin-left: 91.66%;}
+.col-l-offset-0 {margin-left: 0;}
+.col-l-offset-1 {margin-left: 8.33%;}
+.col-l-offset-2 {margin-left: 16.66%;}
+.col-l-offset-3 {margin-left: 25%;}
+.col-l-offset-4 {margin-left: 33.33%;}
+.col-l-offset-5 {margin-left: 41.66%;}
+.col-l-offset-6 {margin-left: 50%;}
+.col-l-offset-7 {margin-left: 58.33%;}
+.col-l-offset-8 {margin-left: 66.66%;}
+.col-l-offset-9 {margin-left: 75%;}
+.col-l-offset-10 {margin-left: 83.33%;}
+.col-l-offset-11 {margin-left: 91.66%;}
 
 /*Panel nawigacji*/
 nav {
@@ -87,16 +87,19 @@ nav ul li {
 .jumbotron {
 	width: 100%;
 	height: 20vh;
+	min-height: 100px;
 	padding-top: 40px;
 	box-sizing: border-box;
-	text-align: center;
 	background: white;
+	text-align: center;
+	vertical-align: middle;
 }
 
-.jumbotron > h2 {
+.jumbotron > h1 {
 	margin: 0 auto;
 	font-size: 26px;
 	max-width: 920px;
+	line-height: 30px;
 }
 
 /*Sekcje z projektami*/
@@ -112,6 +115,7 @@ nav ul li {
 .section_4 {
 	width: 100%;
 	height: 100vh;
+	min-height: 450px;
 }
 
 .section_2 {
@@ -126,6 +130,15 @@ nav ul li {
 	background-color: #8A45CF;
 }
 
+p {
+	padding: 10px;
+	border: 2px solid #373737;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .pink {
 	background-color: #CF45CA;
 }
@@ -135,18 +148,24 @@ nav ul li {
 	min-height: 450px;
 }
 
-.col-offset-2, 
-.col-m-4, 
-.col-m-6 {
+.col-offset-1, 
+.col-l-5, 
+.col-l-6 {
 	height: 90%;
 }
 
-.col-m-6 {
+.col-l-6 {
 	text-align: center;
 }
 
-.col-m-6,
-.col-m-4 {
+/*
+div.pink {
+	text-align: left;
+}
+*/
+
+.col-l-6,
+.col-l-5 {
 	padding: 0px 15px;
 	display: flex;
 	align-items: center;
@@ -155,7 +174,7 @@ nav ul li {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -163,7 +182,6 @@ button {
 	display: inline-block;
 	margin: 4px 2px;
 	padding: 10px;
-/*	min-width: 160px;*/
 	font-size: 16px;
 	font-weight: bold;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -175,12 +193,18 @@ button {
 	-webkit-transition: 0.4s; 
 	transition: 0.4s;
 	min-height: 40px;
+/*	border-style: solid;*/
+/*	border: 2px solid #373737;*/
+	color: #373737;
+	border: 2px solid #373737;
 }
 
 .btn-purple {
+/*
 	color: #47525E;
 	border: 2px solid #47525E;
-	background-image: linear-gradient(90deg, #47525E 50%, transparent 50%);
+*/
+	background-image: linear-gradient(90deg, #373737 50%, transparent 50%);
 }
 
 button:hover {
@@ -194,36 +218,32 @@ button:hover {
 	width: 100%;
 }
 
-.col-m-12 {
+.col-l-12 {
 	height: 100%;
 }
 
-.col-m-12 > .fa {
+.col-l-12 > .fa {
 	font-size: 40px;
 	width: 100%;
 	height:100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/*
-	height: 53px; 
-	width: 53px; 
-	line-height: 53px;
-*/
 }
 
 .form-control {
-    display: block;
+/*    display: block;*/
     width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
+/*    height: 34px;*/
+    padding: 3px 6px;
+	margin: 3px;
+    font-size: 16px;
+    line-height: 2/*1.42857143*/;
     color: #555;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #373737;
+    border-radius: 5px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
@@ -270,8 +290,10 @@ i.fa-angle-double-up {
 	[class*="col-"] {
 		width: 100%;
 		float: left;
-		display: block;
+/*		display: block;*/
+		min-height: 0px;
 	}
+	
 	.col-s-1 {width: 8.33%;} 
 	.col-s-2 {width: 16.66%;} 
 	.col-s-3 {width: 25%;} 
@@ -285,5 +307,81 @@ i.fa-angle-double-up {
 	.col-s-11 {width: 91.66%;} 
 	.col-s-12 {width: 100%;}
 	
+	.col-s-offset-0 {margin-left: 0;}
+	.col-s-offset-1 {margin-left: 8.33%;}
+	.col-s-offset-2 {margin-left: 16.66%;}
+	.col-s-offset-3 {margin-left: 25%;}
+	.col-s-offset-4 {margin-left: 33.33%;}
+	.col-s-offset-5 {margin-left: 41.66%;}
+	.col-s-offset-6 {margin-left: 50%;}
+	.col-s-offset-7 {margin-left: 58.33%;}
+	.col-s-offset-8 {margin-left: 66.66%;}
+	.col-s-offset-9 {margin-left: 75%;}
+	.col-s-offset-10 {margin-left: 83.33%;}
+	.col-s-offset-11 {margin-left: 91.66%;}
 	
+	nav {
+		top: 130px;
+/*		font-size: 0.6em;*/
+	}
+	
+	nav > ul > li {
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	
+	.jumbotron {
+		text-align: center;
+	}
+	 
+	.jumbotron > h1 {
+		font-size: 16px;
+		line-height: 25px;
+		padding: 0 24px;
+	}
+	
+	h2 {
+		font-size: 16px;
+	}
+	
+	h3 {
+		margin: 5px;
+		font-size: 16px;
+	}
+	
+	.section_1 {
+		width: 100%;
+		height: 75vh;
+	}
+	
+	.col-s-12 {
+		height: 45%;
+		padding: 0 30px;
+		display: flex;
+	}
+	p {
+		margin: 10px 5px;
+	}
+	
+	form {
+/*		height: inherit;*/
+		width: auto;
+	}
+	.form-control {
+		font-size: 14px;
+		padding: 2px 6px;
+		height: 34px;
+	}
+	
+	button {
+		display: inline-block;
+		margin: 4px 2px;
+		padding: 5px;
+		font-size: 0.8em;
+		min-height: 30px;
+	}
+	
+	img {
+		height: 100%;
+	}
 }
