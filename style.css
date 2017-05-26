@@ -49,31 +49,64 @@ body {
 .col-l-offset-11 {margin-left: 91.66%;}
 
 /*Panel nawigacji*/
-nav {
-	position: fixed;
-    left: 0;
-	top: 200px;
-	font-size: 16px;
+header {
+	min-height: 50px;
 }
 
-a {
-	color: white;
-	text-decoration: none;
+.navbar-header {
+	width: 100%;
+	min-height: inherit;
+	position: fixed;
+	top: 0;
+	background: linear-gradient(135deg, #848383, #3f3e3e, #000000);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
+}
+
+.navbar {
+	position: fixed;
+    left: 0;
+	top: 160px;
+	font-size: 16px;
 }
 
 ul {
 	padding-left: 0;
 }
 
-nav ul li {
+.navbar li {
 	display: block;
+	list-style-type: none;
 	height: 40px;
-	line-height: 30px;
+	line-height: 40px;
 	font-size: 20px;
 	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
 }
 
-#logo {
+a {
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.navbar li:visited {
+	background-color: #373737;
+}
+
+.navbar li:hover {
+	background-color: #7C7E84;
+}
+
+.navbar li:active {
+	background-color: #373737;
+}
+
+.navbar-brand {
 	position: fixed;
     left: 0;
     height: 32px;
@@ -86,10 +119,13 @@ nav ul li {
 /*Sekcja jumbotron*/
 .jumbotron {
 	width: 100%;
+	padding: 40px;
+/*
 	height: 20vh;
 	min-height: 100px;
 	padding-top: 40px;
-	box-sizing: border-box;
+*/
+/*	box-sizing: border-box;*/
 	background: white;
 	text-align: center;
 	vertical-align: middle;
@@ -97,76 +133,123 @@ nav ul li {
 
 .jumbotron > h1 {
 	margin: 0 auto;
-	font-size: 26px;
+	font-size: 24px;
 	max-width: 920px;
 	line-height: 30px;
+	padding: 0 20px;
 }
 
 /*Sekcje z projektami*/
 .section_1 {
 	width: 100%;
-	height: 80vh;
+	height: auto;
 	min-height: 450px;
-	background-color: #13CE66;
+/*	background-color: #13CE66;*/
+	background: linear-gradient(135deg, #7cf2b0, #45d886, #14ad58);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
 }
 
 .section_2,
 .section_3,
 .section_4 {
 	width: 100%;
-	height: 100vh;
+/*	height: 100vh;*/
 	min-height: 450px;
 }
 
 .section_2 {
-	background-color: #00CFE7;
+/*	background-color: #00CFE7;*/
+	background: linear-gradient(135deg, #89e6f0, #00cfe7, #0797a8);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
 }
 
 .section_3 {
-	background-color: #0063E7;
+/*	background-color: #0063E7;*/
+	background: linear-gradient(135deg, #78abef, #0063e7, #06408d);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
 }
 
 .section_4 {
-	background-color: #8A45CF;
-}
+/*	background-color: #8A45CF;*/
+	background: linear-gradient(135deg, #c299eb, #a16cd6, #7f45ba);
+	background-size: 600% 600%;
 
-p {
-	padding: 10px;
-	border: 2px solid #373737;
-	border-radius: 5px;
-	margin-bottom: 30px;
-	margin-left: 10px;
-	margin-right: 10px;
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
 }
 
 .pink {
-	background-color: #CF45CA;
+/*	background-color: #CF45CA;*/
+	background: linear-gradient(135deg, #eb99e8, #d37acf, #c744c2);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+		0%{background-position:0% 4%}
+		50%{background-position:100% 97%}
+		100%{background-position:0% 4%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 4%}
+	50%{background-position:100% 97%}
+	100%{background-position:0% 4%}
+}
+@keyframes AnimationName {
+	0%{background-position:0% 4%}
+	50%{background-position:100% 97%}
+	100%{background-position:0% 4%}
+}
+
+p {
+/*
+	padding: 10px;
+	border: 2px solid #373737;
+	border-radius: 5px;
+*/
+	font-size: 18px;
+	margin: 10px 40px;
 }
 
 .row {
 	height: inherit;
-	min-height: 450px;
+/*	min-height: 450px;*/
 }
 
+/*
 .col-offset-1, 
 .col-l-5, 
 .col-l-6 {
 	height: 90%;
 }
-
-.col-l-6 {
-	text-align: center;
-}
+*/
 
 /*
-div.pink {
-	text-align: left;
+.col-l-6 {
+	text-align: center;
 }
 */
 
 .col-l-6,
 .col-l-5 {
-	padding: 0px 15px;
+	min-height: 450px;
+	padding: 15px 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -180,6 +263,7 @@ img {
 
 button {
 	display: inline-block;
+	width: 120px;
 	margin: 4px 2px;
 	padding: 10px;
 	font-size: 16px;
@@ -190,21 +274,28 @@ button {
 	background-color: inherit;
 	background-position: 100% 0;
 	background-size: 300%;
-	-webkit-transition: 0.4s; 
-	transition: 0.4s;
+	-webkit-transition: 0.9s; 
+	transition: 0.9s;
 	min-height: 40px;
-/*	border-style: solid;*/
-/*	border: 2px solid #373737;*/
 	color: #373737;
 	border: 2px solid #373737;
 }
 
 .btn-purple {
-/*
-	color: #47525E;
-	border: 2px solid #47525E;
-*/
 	background-image: linear-gradient(90deg, #373737 50%, transparent 50%);
+}
+
+button.btn-angle {
+	font-size: 40px;
+	border: 0px none;
+	padding: 0px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.fa {
+	margin: 0 auto;
 }
 
 button:hover {
@@ -212,8 +303,22 @@ button:hover {
 	color: white;
 }
 
+button.btn-angle:hover {
+	color: #373737;
+}
+
+.social_media {
+	padding: 20px;
+	font-size: 1.6em;
+}
+
+.fa-html5,
+.fa-css3 {
+	padding: 20px;
+}
+
 .row_icon {
-	height: 10%;
+/*	height: 10%;*/
 	display: inline-block;
 	width: 100%;
 }
@@ -229,6 +334,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .form-control {
@@ -278,14 +384,19 @@ input {
 }
 
 div.black{
-	background-color: black;
+	background: linear-gradient(135deg, #848383, #3f3e3e, #000000);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
 }
 
 i.fa-angle-double-up {
 	color: white;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 500px) {
 	
 	[class*="col-"] {
 		width: 100%;
@@ -320,23 +431,23 @@ i.fa-angle-double-up {
 	.col-s-offset-10 {margin-left: 83.33%;}
 	.col-s-offset-11 {margin-left: 91.66%;}
 	
-	nav {
+	.navbar {
 		top: 130px;
-/*		font-size: 0.6em;*/
 	}
 	
-	nav > ul > li {
+	.navbar > ul > li {
 		font-size: 16px;
 		padding-left: 10px;
 	}
 	
 	.jumbotron {
 		text-align: center;
+		padding: 20px;
 	}
 	 
 	.jumbotron > h1 {
 		font-size: 16px;
-		line-height: 25px;
+		line-height: 20px;
 		padding: 0 24px;
 	}
 	
@@ -347,18 +458,21 @@ i.fa-angle-double-up {
 	h3 {
 		margin: 5px;
 		font-size: 16px;
+		text-align: center;
 	}
 	
 	.section_1 {
 		width: 100%;
-		height: 75vh;
+		min-height: 350px;
+/*		height: 80vh;*/
 	}
 	
 	.col-s-12 {
 		height: 45%;
-		padding: 0 30px;
+		padding: 20px 30px;
 		display: flex;
 	}
+	
 	p {
 		margin: 10px 5px;
 	}

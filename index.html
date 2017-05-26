@@ -9,20 +9,25 @@
 <title>Portfolio Anna Bartkowiak</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
-	<header>
-		<a id="logo" href="#">Brand</a>
-		<nav>
+	<header id="item1">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">BRAND</a>
+		</div>
+		<div class="navbar">
 			<ul>
-				<li class="item1"><a href="#" class="menu">1</a></li>
-				<li class="item2"><a href="#" class="menu">2</a></li>
-				<li class="item3"><a href="#" class="menu">3</a></li>
-				<li class="item4"><a href="#" class="menu">Ja</a></li>
-				<li class="item5"><a href="#" class="menu">Phone</a></li>
+				<li><a href="#item1" class="menu">1</a></li>
+				<li><a href="#item2" class="menu">2</a></li>
+				<li><a href="#item3" class="menu">3</a></li>
+				<li><a href="#item4" class="menu"><i class="fa fa-user-o" aria-hidden="true"></i>
+				</a></li>
+				<li><a href="#item5" class="menu"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+				</a></li>
 			</ul>
-		</nav>
+		</div>	
+<!--		</nav>-->
 	</header>
 	
 	<section class="jumbotron">
@@ -33,63 +38,97 @@
 		<div class="row">
 			<div class="col-l-offset-1 col-s-offset-0"></div>
 			<div class="col-l-5 col-s-12">
-				<h3>Projekt 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at augue eget purus posuere euismod id ac ex.</p>
-				<button type="button" class="btn btn-purple">Otwórz</button>
+				<h3>Projekt 1 stworzony z zastosowaniem:</h3>
+
+				<div class="social_media">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+					<i class="fa fa-css3" aria-hidden="true"></i>
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+				</div>
+
+				<button type="button" class="btn btn-purple">Demo <i class="fa fa-code" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button>
 			</div>
-			
+
 			<div class="col-l-6 col-s-12">
 			<img src="img/brand1.png" alt="Projekty" title="Projekt1">
 			</div>
-			
+
 			<div class="row_icon">
 				<div class="col-l-12">
-					<i id="icon-angle green" class="fa fa-angle-down green"></i>
+					<a href="#item2">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle" class="fa fa-angle-down"></i>
+						</button>
+					</a>
 				</div>
 			</div>
-		</div>
-		
-		
+		</div>	
 	</section>
 	
-	<section class="section_2">
+	<section  id="item2" class="section_2">
 		<div class="row">
 			<div class="col-l-offset-1 col-s-offset-0"></div>
 			
 			<div class="col-l-5 col-s-12">
-				<h3>Projekt 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at augue eget purus posuere euismod id ac ex. Etiam lacus erat, efficitur vel ante at, sodales sodales elit. Donec aliquet.</p>
-				<button type="button" class="btn btn-purple">Otwórz</button>
+				<h3>Projekt 1 stworzony z zastosowaniem:</h3>
+				
+				<div class="social_media">
+					<i class="fa fa-html5" aria-hidden="true"> html5 </i>
+					<i class="fa fa-css3" aria-hidden="true"> css3 </i>
+					<i class="fa fa-mobile" aria-hidden="true"> rwd </i>
+				</div>
+				
+				<button type="button" class="btn btn-purple">Demo <i class="fa fa-code" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button>
 			</div>
 			
 			<div class="col-l-6 col-s-12">
-			<img src="img/brand1.png" alt="Projekty" title="Projekt1">
+			<img src="img/zielono-mi1.png" alt="Projekty" title="Projekt2">
 			</div>
 			
 			<div class="row_icon">
 				<div class="col-l-12">
-					<i id="icon-angle light-blue" class="fa fa-angle-down green"></i>
+					<a href="#item3">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle light-blue" class="fa fa-angle-down"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<section class="section_3">
+	<section id="item3" class="section_3">
 		<div class="row">
 			<div class="col-l-offset-1 col-s-offset-0"></div>
 			<div class="col-l-5 col-s-12">
-				<h3>Projekt 3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at augue eget purus posuere euismod id ac ex. Etiam lacus erat, efficitur vel ante at, sodales sodales elit. Donec aliquet.</p>
-				<button type="button" class="btn btn-purple">Otwórz</button>
+				<h3>Projekt 1 stworzony z zastosowaniem:</h3>
+				
+				<div class="social_media">
+					<i class="fa fa-html5" aria-hidden="true"> html5 </i>
+					<i class="fa fa-css3" aria-hidden="true"> css3 </i>
+					<i class="fa fa-mobile" aria-hidden="true"> rwd </i>
+				</div>
+				
+				<button type="button" class="btn btn-purple">Demo <i class="fa fa-code" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button>
 			</div>
 			
 			<div class="col-l-6 col-s-12">
-			<img src="img/brand1.png" alt="Projekty" title="Projekt1">
+			<img src="img/brand1.png" alt="Projekty" title="Projekt3">
 			</div>
 			
 			<div class="row_icon">
 				<div class="col-l-12">
-					<i id="icon-angle blue" class="fa fa-angle-down green"></i>
+					<a href="#item4">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle blue" class="fa fa-angle-down"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -97,12 +136,15 @@
 	
 	<section class="section_4">
 		<div class="row">
-			<div class="col-l-offset-1 col-s-offset-0"></div>
+			<div id="item4" class="col-l-offset-1 col-s-offset-0"></div>
 			<div class="col-l-6 col-s-12">
 				<h3>O mnie</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at augue eget purus posuere euismod id ac ex. Etiam lacus erat, efficitur vel ante at, sodales sodales elit. Donec aliquet.</p>
+				<p>Zależy mi możliwości uczenia się od doświadczonych specjalistów, a jeżeli tobie zależy na zmotywowanym pracowniku do dłuższej współpracy koniecznie się do mnie odezwij chętnie z tobą porozmawiam.</p>
+				<p>Moja nieokiełznana wyobraźnia sprawiła, że zapragnełam nauczyć się programowania Front-endowego. Tworzenie stron od zawsze mnie intrygowało.</p>
+				<p>Przeszłam intensywny bootcamp w szkole programowania Kodilla. Obecnie praktykuję zdobyte umiejętności w zaciszu domowym tworząc layouty z PSD</p>
+				<p>Pedantka dla której pisanie w HTML i CSS oraz konieczność bezustannej nauki to czysta przyjemność.</p>
 			</div>
-			<div class="col-l-5 pink col-s-12">
+			<div id="item5" class="col-l-5 pink col-s-12">
 			<h2>Kontakt</h2>
 					<form class="form">
 						<div class="form-group">
@@ -125,7 +167,11 @@
 			
 			<div class="row_icon">
 				<div class="col-l-12 black">
-					<i id="icon-angle violet" class="fa fa-angle-double-up green"></i>
+					<a href="#item1">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle violet" class="fa fa-angle-double-up"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
