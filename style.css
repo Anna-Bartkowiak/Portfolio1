@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	color: #373737;
+	color: white;
 }
 
 .row:before,
@@ -50,6 +50,7 @@ body {
 
 /*Panel nawigacji*/
 header {
+	background-color: black;
 	min-height: 50px;
 }
 
@@ -58,12 +59,7 @@ header {
 	min-height: inherit;
 	position: fixed;
 	top: 0;
-	background: linear-gradient(135deg, #848383, #3f3e3e, #000000);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+	background: black;
 }
 
 .navbar {
@@ -92,6 +88,11 @@ a {
 	color: white;
 	text-decoration: none;
 	vertical-align: middle;
+/*	height: auto;*/
+}
+
+svg {
+	width: 160px;
 }
 
 .navbar li:visited {
@@ -106,15 +107,15 @@ a {
 	background-color: #373737;
 }
 
+/*
 .navbar-brand {
 	position: fixed;
     left: 0;
     height: 32px;
 	width: 32px;
     padding: 15px 15px;
-	color: #373737;
-	text-transform: uppercase;
 }
+*/
 
 /*Sekcja jumbotron*/
 .jumbotron {
@@ -123,8 +124,8 @@ a {
 /*
 	height: 20vh;
 	min-height: 100px;
-	padding-top: 40px;
 */
+/*	padding-top: 40px;*/
 /*	box-sizing: border-box;*/
 	background: white;
 	text-align: center;
@@ -132,6 +133,7 @@ a {
 }
 
 .jumbotron > h1 {
+	color: #373737;
 	margin: 0 auto;
 	font-size: 24px;
 	max-width: 920px;
@@ -142,79 +144,35 @@ a {
 /*Sekcje z projektami*/
 .section_1 {
 	width: 100%;
-	height: auto;
+/*	height: calc(80vh - 50px);*/
 	min-height: 450px;
-/*	background-color: #13CE66;*/
-	background: linear-gradient(135deg, #7cf2b0, #45d886, #14ad58);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+/*	min-height: 450px;*/
+	background-color: #13CE66;
 }
 
 .section_2,
 .section_3,
 .section_4 {
 	width: 100%;
-/*	height: 100vh;*/
 	min-height: 450px;
+/*	height: 100vh;*/
+/*	height: auto;*/
 }
 
 .section_2 {
-/*	background-color: #00CFE7;*/
-	background: linear-gradient(135deg, #89e6f0, #00cfe7, #0797a8);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+	background-color: #00CFE7;
 }
 
 .section_3 {
-/*	background-color: #0063E7;*/
-	background: linear-gradient(135deg, #78abef, #0063e7, #06408d);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+	background-color: #0063E7;
 }
 
 .section_4 {
-/*	background-color: #8A45CF;*/
-	background: linear-gradient(135deg, #c299eb, #a16cd6, #7f45ba);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+	background-color: #8A45CF;
 }
 
-.pink {
-/*	background-color: #CF45CA;*/
-	background: linear-gradient(135deg, #eb99e8, #d37acf, #c744c2);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-		0%{background-position:0% 4%}
-		50%{background-position:100% 97%}
-		100%{background-position:0% 4%}
-}
-@-moz-keyframes AnimationName {
-	0%{background-position:0% 4%}
-	50%{background-position:100% 97%}
-	100%{background-position:0% 4%}
-}
-@keyframes AnimationName {
-	0%{background-position:0% 4%}
-	50%{background-position:100% 97%}
-	100%{background-position:0% 4%}
+.section_5 {
+	background-color: #CF45CA;
 }
 
 p {
@@ -227,10 +185,21 @@ p {
 	margin: 10px 40px;
 }
 
+.section_1 p,
+.section_2 p,
+.section_3 p,
+.section_1 h3,
+.section_2 h3,
+.section_3 h3 {
+	text-align: center;
+}
+
+/*
 .row {
 	height: inherit;
-/*	min-height: 450px;*/
+	min-height: 450px;
 }
+*/
 
 /*
 .col-offset-1, 
@@ -248,7 +217,8 @@ p {
 
 .col-l-6,
 .col-l-5 {
-	min-height: 450px;
+/*	height: 90%;*/
+	min-height: 410px;
 	padding: 15px 15px;
 	display: flex;
 	align-items: center;
@@ -256,9 +226,50 @@ p {
 	flex-direction: column;
 }
 
+.pink {
+	display: block;
+	padding: 40px;
+}
+
 img {
 	width: 100%;
 	height: auto;
+}
+
+.button {
+	display: flex;
+	justify-content: space-around;
+}
+
+.box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 300px;
+	padding: 0 20px;
+}
+
+.box-content p {
+	text-transform: uppercase;
+}
+
+.text,
+.col-l-12 > h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.text > p {
+	width: 200px; 
+	padding: 10px 20px;
+	margin: 0;
+	font-size: 16px;
+}
+
+.col-l-12 > h3 {
+	padding: 20px;
 }
 
 button {
@@ -269,7 +280,6 @@ button {
 	font-size: 16px;
 	font-weight: bold;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	border-radius: 5px;
 	cursor: pointer;
 	background-color: inherit;
 	background-position: 100% 0;
@@ -277,12 +287,12 @@ button {
 	-webkit-transition: 0.9s; 
 	transition: 0.9s;
 	min-height: 40px;
-	color: #373737;
-	border: 2px solid #373737;
+	color: white;
+	border: 2px solid white;
 }
 
 .btn-purple {
-	background-image: linear-gradient(90deg, #373737 50%, transparent 50%);
+	background-image: linear-gradient(90deg, white 50%, transparent 50%);
 }
 
 button.btn-angle {
@@ -300,21 +310,18 @@ button.btn-angle {
 
 button:hover {
 	background-position: 0 100%; 
-	color: white;
-}
-
-button.btn-angle:hover {
 	color: #373737;
 }
+
+/*
+.btn-angle:hover {
+	color: #373737;
+}
+*/
 
 .social_media {
 	padding: 20px;
 	font-size: 1.6em;
-}
-
-.fa-html5,
-.fa-css3 {
-	padding: 20px;
 }
 
 .row_icon {
@@ -348,8 +355,7 @@ button.btn-angle:hover {
     color: #555;
     background-color: #fff;
     background-image: none;
-    border: 2px solid #373737;
-    border-radius: 5px;
+    border: 1px solid white;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
@@ -384,12 +390,7 @@ input {
 }
 
 div.black{
-	background: linear-gradient(135deg, #848383, #3f3e3e, #000000);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 8s ease infinite;
-	-moz-animation: AnimationName 8s ease infinite;
-	animation: AnimationName 8s ease infinite;
+	background: black;
 }
 
 i.fa-angle-double-up {
@@ -451,6 +452,14 @@ i.fa-angle-double-up {
 		padding: 0 24px;
 	}
 	
+	.box-content {
+		min-height: 200px;
+	}
+	
+	.text {
+		padding: 0 20px;
+	}
+	
 	h2 {
 		font-size: 16px;
 	}
@@ -469,8 +478,14 @@ i.fa-angle-double-up {
 	
 	.col-s-12 {
 		height: 45%;
-		padding: 20px 30px;
+		width: 95%;
+		padding: 20px;
 		display: flex;
+	}
+	
+	.col-s-12 > h3 {
+    	margin: 0 auto;
+		padding: 10px 20px;
 	}
 	
 	p {
@@ -497,5 +512,6 @@ i.fa-angle-double-up {
 	
 	img {
 		height: 100%;
+		width: 90%;
 	}
 }
