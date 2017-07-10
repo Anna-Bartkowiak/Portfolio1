@@ -50,16 +50,17 @@ body {
 
 /*Panel nawigacji*/
 header {
-	background-color: black;
 	min-height: 50px;
+	font-size: 0px;
 }
 
 .navbar-header {
+	background-color: black;
 	width: 100%;
 	min-height: inherit;
 	position: fixed;
 	top: 0;
-	background: black;
+	z-index: 1;
 }
 
 .navbar {
@@ -92,7 +93,7 @@ a {
 }
 
 svg {
-	width: 160px;
+	height: 49.5px;
 }
 
 .navbar li:visited {
@@ -144,8 +145,7 @@ svg {
 /*Sekcje z projektami*/
 .section_1 {
 	width: 100%;
-/*	height: calc(80vh - 50px);*/
-	min-height: 450px;
+	min-height: 410px;
 /*	min-height: 450px;*/
 	background-color: #13CE66;
 }
@@ -154,6 +154,7 @@ svg {
 .section_3,
 .section_4 {
 	width: 100%;
+	height: 100%;
 	min-height: 450px;
 /*	height: 100vh;*/
 /*	height: auto;*/
@@ -218,6 +219,7 @@ p {
 .col-l-6,
 .col-l-5 {
 /*	height: 90%;*/
+	height: 100%;
 	min-height: 410px;
 	padding: 15px 15px;
 	display: flex;
@@ -260,12 +262,21 @@ img {
     justify-content: center;
 }
 
+.text{
+	height: inherit;
+}
 
 .text > p {
-	width: 200px; 
+	width: 350px; 
 	padding: 10px 20px;
 	margin: 0;
 	font-size: 16px;
+}
+
+img.align-left {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
 }
 
 .col-l-12 > h3 {
@@ -318,6 +329,102 @@ button:hover {
 	color: #373737;
 }
 */
+#box,
+#box1,
+#box2 {
+	width:300px;
+	height:350px;
+	margin: 50px 15px 30px 15px;
+	perspective: 300px;
+	-webkit-perspective:300px;
+}
+
+#card,
+#card1,
+#card2 {
+	position:relative;
+	width:100%;
+	height:100%;
+	text-align:center;
+	transition:1s;
+	-webkit-transition:1s;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+}
+
+#box:hover > #card, 
+#box1:hover > #card1,
+#box2:hover > #card2 {
+	-webkit-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
+
+#front,
+#front1,
+#front2 {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color: grey;
+	background-size:100%;
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;
+}
+
+#front {
+	background-image: url('img/omnie.jpg');
+}
+
+#front1 {
+	background-image: url('img/learn.jpg');
+}
+
+#front2 {
+	background-image: url('img/future.jpg');
+}
+
+#back,
+#back1, 
+#back2 {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color: #373737;
+	/*        line-height:240px;*/
+	/*
+	color:#FFF;
+	background-color:#000;
+	box-shadow:0 0 4px 8px #FFF inset;
+	*/
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+#front > h3,
+#front1 > h3,
+#front2 > h3 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 150px;
+	margin: 0 auto;
+	padding: 10px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+#back > p,
+#back1 > p, 
+#back2 > p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+}
 
 .social_media {
 	padding: 20px;
@@ -328,6 +435,7 @@ button:hover {
 /*	height: 10%;*/
 	display: inline-block;
 	width: 100%;
+/*	font-size: 0;*/
 }
 
 .col-l-12 {
@@ -344,6 +452,43 @@ button:hover {
 	cursor: pointer;
 }
 
+/*
+.wrapper-box {
+	margin: 0 20px;
+}
+*/
+.profil_picture > img {
+	max-height: 200px;
+	max-width: 150px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+/*
+.wrapper-box {
+	width: 400px;
+}
+*/
+.wrapper {
+	width: 100%;
+	line-height: 50px;
+	align-content: center;
+}
+
+.wrapper > p {
+	margin: 0 20px;
+	display: inline-block;
+}
+
+.wrapper > .fa {
+	font-size: 26px;
+}
+
+.wrapper > a {
+	padding: 0 20px;
+	font-size: 18px;
+}
+
 .form-control {
 /*    display: block;*/
     width: 100%;
@@ -356,11 +501,13 @@ button:hover {
     background-color: #fff;
     background-image: none;
     border: 1px solid white;
+/*
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+*/
 }
 
 input {
@@ -397,6 +544,44 @@ i.fa-angle-double-up {
 	color: white;
 }
 
+@media (min-width: 500px) and (max-width: 768) {
+	
+	[class*="col-"] {
+		width: 100%;
+		float: left;
+/*		display: block;*/
+		min-height: 0px;
+	}
+	
+	.col-m-1 {width: 8.33%;} 
+	.col-m-2 {width: 16.66%;} 
+	.col-m-3 {width: 25%;} 
+	.col-m-4 {width: 33.33%;} 
+	.col-m-5 {width: 41.66%;} 
+	.col-m-6 {width: 50%;} 
+	.col-m-7 {width: 58.33%;} 
+	.col-m-8 {width: 66.66%;} 
+	.col-m-9 {width: 75%;} 
+	.col-m-10 {width: 83.33%;} 
+	.col-m-11 {width: 91.66%;} 
+	.col-m-12 {width: 100%;}
+	
+	.col-m-offset-0 {margin-left: 0;}
+	.col-m-offset-1 {margin-left: 8.33%;}
+	.col-m-offset-2 {margin-left: 16.66%;}
+	.col-m-offset-3 {margin-left: 25%;}
+	.col-m-offset-4 {margin-left: 33.33%;}
+	.col-m-offset-5 {margin-left: 41.66%;}
+	.col-m-offset-6 {margin-left: 50%;}
+	.col-m-offset-7 {margin-left: 58.33%;}
+	.col-m-offset-8 {margin-left: 66.66%;}
+	.col-m-offset-9 {margin-left: 75%;}
+	.col-m-offset-10 {margin-left: 83.33%;}
+	.col-m-offset-11 {margin-left: 91.66%;}
+	
+	
+}
+	
 @media(max-width: 500px) {
 	
 	[class*="col-"] {
@@ -438,18 +623,18 @@ i.fa-angle-double-up {
 	
 	.navbar > ul > li {
 		font-size: 16px;
-		padding-left: 10px;
+		padding: 0px 10px;
 	}
 	
 	.jumbotron {
 		text-align: center;
-		padding: 20px;
+		padding: 10px;
+		min-width: inherit;
 	}
 	 
 	.jumbotron > h1 {
-		font-size: 16px;
-		line-height: 20px;
-		padding: 0 24px;
+		font-size: 0.8em;
+/*		padding: 0 24px;*/
 	}
 	
 	.box-content {
@@ -470,15 +655,33 @@ i.fa-angle-double-up {
 		text-align: center;
 	}
 	
+/*
 	.section_1 {
+		min-height: 350px;
+*/
+/*		height: 80vh;*/
+/*	}*/
+/*
+	
+	.section_2,
+	.section_3 {
 		width: 100%;
 		min-height: 350px;
-/*		height: 80vh;*/
+		height: 100vh;
 	}
+*/
+	
+/*
+	.row {
+		height: 100vh;
+	}
+*/
 	
 	.col-s-12 {
+/*
 		height: 45%;
 		width: 95%;
+*/
 		padding: 20px;
 		display: flex;
 	}
@@ -489,17 +692,40 @@ i.fa-angle-double-up {
 	}
 	
 	p {
-		margin: 10px 5px;
+		margin: 0px 10px;
 	}
+	
+	#box, 
+	#box1, 
+	#box2 {
+		width: 200px;
+    	height: 250px;
+    	margin: 20px 5px 10px 5px;
+		perspective: 300px;
+		-webkit-perspective: 300px;
+	}
+	
+	#back > p, 
+	#back1 > p, 
+	#back2 > p {
+		font-size: 14px;
+		line-height: 15px;
+	}
+	
 	
 	form {
 /*		height: inherit;*/
 		width: auto;
 	}
+	
 	.form-control {
 		font-size: 14px;
 		padding: 2px 6px;
 		height: 34px;
+	}
+	
+	.form-group > button {
+		align-content: center;
 	}
 	
 	button {
@@ -513,5 +739,6 @@ i.fa-angle-double-up {
 	img {
 		height: 100%;
 		width: 90%;
+		margin: 30px 0;
 	}
 }
