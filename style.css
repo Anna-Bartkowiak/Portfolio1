@@ -544,13 +544,13 @@ i.fa-angle-double-up {
 	color: white;
 }
 
-@media (min-width: 500px) and (max-width: 768) {
+@media (min-width: 501px) and (max-width: 768px) {
 	
 	[class*="col-"] {
-		width: 100%;
+/*		width: 100%;*/
 		float: left;
 /*		display: block;*/
-		min-height: 0px;
+		min-height: 1px;
 	}
 	
 	.col-m-1 {width: 8.33%;} 
@@ -579,6 +579,71 @@ i.fa-angle-double-up {
 	.col-m-offset-10 {margin-left: 83.33%;}
 	.col-m-offset-11 {margin-left: 91.66%;}
 	
+	.navbar {
+    	position: fixed;
+    	left: 0;
+		top: 130px; 
+	}
+	
+	.navbar li {
+		height: 30px;
+		line-height: 30px;
+	}
+	
+	.jumbotron {
+		padding: 15px;
+	}
+	
+	.jumbotron > h1,
+	h2,
+	.navbar li {
+		font-size: 0.95em;
+	}
+	
+	.section_1,
+	.section_2,
+	.section_3,
+	.col-m-5, 
+	.col-m-6 {
+		min-height: 350px;
+	}
+	
+	.section_4 {
+		min-height: 0px;
+	}
+	
+	p {
+		margin: 20px;
+	}
+	
+	p,
+	button,
+	.form-control,
+	.wrapper > a {
+		font-size: 0.9em;
+	}
+	
+	button {
+		width: 80px;
+		padding: 4px;
+	}
+	
+	.box-content {
+		min-height: 250px;
+	}
+	
+	#box, 
+	#box1, 
+	#box2 {
+		height: 300px;
+		width: 250px;
+		margin: 30px;
+	}
+	
+	.text {
+		min-height: 400px;
+		align-items: center;
+	}
 	
 }
 	
