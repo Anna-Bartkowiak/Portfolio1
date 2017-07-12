@@ -335,8 +335,8 @@ button:hover {
 	width:300px;
 	height:350px;
 	margin: 50px 15px 30px 15px;
-	perspective: 300px;
-	-webkit-perspective:300px;
+	perspective: 400px;
+	-webkit-perspective: 400px;
 }
 
 #card,
@@ -413,6 +413,12 @@ button:hover {
 	padding: 10px;
 	border-top: 1px solid;
 	border-bottom: 1px solid;
+}
+
+#front > p,
+#front1 > p,
+#front2 > p {
+	visibility: hidden;
 }
 
 #back > p,
@@ -582,7 +588,7 @@ i.fa-angle-double-up {
 	.navbar {
     	position: fixed;
     	left: 0;
-		top: 130px; 
+		top: 105px; 
 	}
 	
 	.navbar li {
@@ -591,13 +597,17 @@ i.fa-angle-double-up {
 	}
 	
 	.jumbotron {
-		padding: 15px;
+		padding: 10px;
 	}
 	
 	.jumbotron > h1,
 	h2,
 	.navbar li {
 		font-size: 0.95em;
+	}
+	
+	.jumbotron > h1 {
+		line-height: 24px;
 	}
 	
 	.section_1,
@@ -643,6 +653,35 @@ i.fa-angle-double-up {
 	.text {
 		min-height: 400px;
 		align-items: center;
+	}
+	
+	#front > h3, 
+	#front1 > h3, 
+	#front2 > h3 {
+		position: relative;
+    	top: 0%;
+    	transform: translateY(0%);
+		font-size: 0.95em;
+    	width: 100px;
+    	margin-top: 10px;
+		margin-bottom: 0;
+		margin-left: auto;
+    	padding: 5px;
+	}
+	
+	#front > p,
+	#front1 > p,
+	#front2 > p {
+		visibility: visible;
+		text-align: left;
+		margin: 15px;
+		font-size: 0.8em;
+	}
+	
+	#back > p, 
+	#back1 > p, 
+	#back2 > p {
+		line-height: 16px;
 	}
 	
 }
@@ -768,6 +807,30 @@ i.fa-angle-double-up {
     	margin: 20px 5px 10px 5px;
 		perspective: 300px;
 		-webkit-perspective: 300px;
+	}
+	
+	#front > h3, 
+	#front1 > h3, 
+	#front2 > h3 {
+		position: relative;
+    	top: 0%;
+    	transform: translateY(0%);
+		font-size: 0.9em;
+    	width: 100px;
+    	margin-top: 10px;
+		margin-bottom: 0;
+		margin-left: auto;
+    	padding: 3px;
+	}
+	
+	#front > p,
+	#front1 > p,
+	#front2 > p {
+		visibility: visible;
+		text-align: left;
+		margin: 10px;
+		font-size: 0.8em;
+		line-height: 0.98em;
 	}
 	
 	#back > p, 
