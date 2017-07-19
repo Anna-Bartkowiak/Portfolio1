@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	color: white;
+	color: #FFF;
 }
 
 .row:before,
@@ -55,19 +55,19 @@ header {
 }
 
 .navbar-header {
-	background-color: black;
 	width: 100%;
 	min-height: inherit;
 	position: fixed;
 	top: 0;
 	z-index: 1;
+	background-color: #000;
 }
 
 .navbar {
+	font-size: 16px;
 	position: fixed;
     left: 0;
-	top: 160px;
-	font-size: 16px;
+	top: 170px;
 }
 
 ul {
@@ -86,10 +86,9 @@ ul {
 }
 
 a {
-	color: white;
-	text-decoration: none;
+	color: #FFF;
 	vertical-align: middle;
-/*	height: auto;*/
+	text-decoration: none;
 }
 
 svg {
@@ -108,45 +107,30 @@ svg {
 	background-color: #373737;
 }
 
-/*
-.navbar-brand {
-	position: fixed;
-    left: 0;
-    height: 32px;
-	width: 32px;
-    padding: 15px 15px;
-}
-*/
-
-/*Sekcja jumbotron*/
+/*Section jumbotron*/
 .jumbotron {
 	width: 100%;
 	padding: 40px;
-/*
-	height: 20vh;
-	min-height: 100px;
-*/
-/*	padding-top: 40px;*/
-/*	box-sizing: border-box;*/
-	background: white;
+	background: #FFF;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .jumbotron > h1 {
-	color: #373737;
-	margin: 0 auto;
-	font-size: 24px;
 	max-width: 920px;
 	line-height: 30px;
 	padding: 0 20px;
+	margin: 0 auto;
+	font-size: 24px;
+	color: #373737;
+	-webkit-animation-duration: 2s;
+  	-webkit-animation-delay: 0s;
 }
 
-/*Sekcje z projektami*/
+/*Section - project*/
 .section_1 {
 	width: 100%;
 	min-height: 410px;
-/*	min-height: 450px;*/
 	background-color: #13CE66;
 }
 
@@ -156,8 +140,6 @@ svg {
 	width: 100%;
 	height: 100%;
 	min-height: 450px;
-/*	height: 100vh;*/
-/*	height: auto;*/
 }
 
 .section_2 {
@@ -176,14 +158,16 @@ svg {
 	background-color: #CF45CA;
 }
 
+h3 {
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-delay: 3s;
+}
+
 p {
-/*
-	padding: 10px;
-	border: 2px solid #373737;
-	border-radius: 5px;
-*/
 	font-size: 18px;
 	margin: 10px 40px;
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-delay: 3s;
 }
 
 .section_1 p,
@@ -195,30 +179,8 @@ p {
 	text-align: center;
 }
 
-/*
-.row {
-	height: inherit;
-	min-height: 450px;
-}
-*/
-
-/*
-.col-offset-1, 
-.col-l-5, 
-.col-l-6 {
-	height: 90%;
-}
-*/
-
-/*
-.col-l-6 {
-	text-align: center;
-}
-*/
-
 .col-l-6,
 .col-l-5 {
-/*	height: 90%;*/
 	height: 100%;
 	min-height: 410px;
 	padding: 15px 15px;
@@ -236,6 +198,8 @@ p {
 img {
 	width: 100%;
 	height: auto;
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-delay: 6s;
 }
 
 .button {
@@ -244,11 +208,11 @@ img {
 }
 
 .box-content {
+	min-height: 300px;
+	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	min-height: 300px;
-	padding: 0 20px;
 }
 
 .box-content p {
@@ -274,8 +238,8 @@ img {
 }
 
 img.align-left {
-	width: 100px;
 	float: left;
+	width: 100px;
 	margin-right: 20px;
 }
 
@@ -286,6 +250,7 @@ img.align-left {
 button {
 	display: inline-block;
 	width: 120px;
+	min-height: 40px;
 	margin: 4px 2px;
 	padding: 10px;
 	font-size: 16px;
@@ -297,26 +262,30 @@ button {
 	background-size: 300%;
 	-webkit-transition: 0.9s; 
 	transition: 0.9s;
-	min-height: 40px;
-	color: white;
-	border: 2px solid white;
+	color: #FFF;
+	border: 2px solid #FFF;
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-delay: 5s;
 }
 
 .btn-purple {
-	background-image: linear-gradient(90deg, white 50%, transparent 50%);
+	background-image: linear-gradient(90deg, #FFF 50%, transparent 50%);
 }
 
 button.btn-angle {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
 	font-size: 40px;
 	border: 0px none;
 	padding: 0px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
 }
 
 .fa {
 	margin: 0 auto;
+	-webkit-animation-duration: 15s;
+  	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
 }
 
 button:hover {
@@ -324,11 +293,6 @@ button:hover {
 	color: #373737;
 }
 
-/*
-.btn-angle:hover {
-	color: #373737;
-}
-*/
 #box,
 #box1,
 #box2 {
@@ -365,7 +329,6 @@ button:hover {
 	position:absolute;
 	width:100%;
 	height:100%;
-	background-color: grey;
 	background-size:100%;
 	backface-visibility:hidden;
 	-webkit-backface-visibility:hidden;
@@ -390,12 +353,6 @@ button:hover {
 	width:100%;
 	height:100%;
 	background-color: #373737;
-	/*        line-height:240px;*/
-	/*
-	color:#FFF;
-	background-color:#000;
-	box-shadow:0 0 4px 8px #FFF inset;
-	*/
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 	-webkit-backface-visibility:hidden;
@@ -427,8 +384,8 @@ button:hover {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 14px;
 	line-height: 20px;
+	font-size: 14px;
 	text-align: left;
 }
 
@@ -438,10 +395,8 @@ button:hover {
 }
 
 .row_icon {
-/*	height: 10%;*/
 	display: inline-block;
 	width: 100%;
-/*	font-size: 0;*/
 }
 
 .col-l-12 {
@@ -449,32 +404,24 @@ button:hover {
 }
 
 .col-l-12 > .fa {
-	font-size: 40px;
-	width: 100%;
-	height:100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	height:100%;
+	font-size: 40px;
 	cursor: pointer;
 }
 
-/*
-.wrapper-box {
-	margin: 0 20px;
-}
-*/
 .profil_picture > img {
 	max-height: 200px;
 	max-width: 150px;
 	border-radius: 50%;
 	margin-top: 20px;
+	-webkit-animation-duration: 15s;
+  	-webkit-animation-delay: 1s;
 }
 
-/*
-.wrapper-box {
-	width: 400px;
-}
-*/
 .wrapper {
 	width: 100%;
 	line-height: 50px;
@@ -482,8 +429,8 @@ button:hover {
 }
 
 .wrapper > p {
-	margin: 0 20px;
 	display: inline-block;
+	margin: 0 20px;
 }
 
 .wrapper > .fa {
@@ -496,17 +443,15 @@ button:hover {
 }
 
 .form-control {
-/*    display: block;*/
     width: 100%;
-/*    height: 34px;*/
     padding: 3px 6px;
 	margin: 3px;
     font-size: 16px;
     line-height: 2/*1.42857143*/;
     color: #555;
-    background-color: #fff;
+    background-color: #FFF;
     background-image: none;
-    border: 1px solid white;
+    border: 1px solid #FFF;
 /*
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -522,13 +467,17 @@ input {
 
 input {
     -webkit-appearance: textfield;
-    background-color: white;
+    background-color: #FFF;
     -webkit-rtl-ordering: logical;
     user-select: text;
     cursor: auto;
 }
 
 input {
+	display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
     text-rendering: auto;
     color: initial;
     letter-spacing: normal;
@@ -536,26 +485,20 @@ input {
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin: 0em 0em 0em 0em;
-    font: 13.3333px Arial;
 }
 
 div.black{
-	background: black;
+	background: #000;
 }
 
 i.fa-angle-double-up {
-	color: white;
+	color: #FFF;
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
 	
 	[class*="col-"] {
-/*		width: 100%;*/
 		float: left;
-/*		display: block;*/
 		min-height: 1px;
 	}
 	
@@ -601,8 +544,8 @@ i.fa-angle-double-up {
 	}
 	
 	.jumbotron > h1,
-	h2,
-	.navbar li {
+	.navbar li,
+	h2 {
 		font-size: 0.95em;
 	}
 	
@@ -645,7 +588,7 @@ i.fa-angle-double-up {
 	#box, 
 	#box1, 
 	#box2 {
-		height: 300px;
+		height: 310px;
 		width: 250px;
 		margin: 30px;
 	}
@@ -661,12 +604,12 @@ i.fa-angle-double-up {
 		position: relative;
     	top: 0%;
     	transform: translateY(0%);
-		font-size: 0.95em;
     	width: 100px;
     	margin-top: 10px;
 		margin-bottom: 0;
 		margin-left: auto;
     	padding: 5px;
+		font-size: 0.95em;
 	}
 	
 	#front > p,
@@ -674,8 +617,8 @@ i.fa-angle-double-up {
 	#front2 > p {
 		visibility: visible;
 		text-align: left;
-		margin: 15px;
-		font-size: 0.8em;
+		margin: 10px 10px 10px 18px;
+		font-size: 0.9em;
 	}
 	
 	#back > p, 
@@ -691,7 +634,6 @@ i.fa-angle-double-up {
 	[class*="col-"] {
 		width: 100%;
 		float: left;
-/*		display: block;*/
 		min-height: 0px;
 	}
 	
@@ -726,19 +668,18 @@ i.fa-angle-double-up {
 	}
 	
 	.navbar > ul > li {
-		font-size: 16px;
 		padding: 0px 10px;
+		font-size: 16px;
 	}
 	
 	.jumbotron {
-		text-align: center;
-		padding: 10px;
 		min-width: inherit;
+		padding: 10px;
+		text-align: center;
 	}
 	 
 	.jumbotron > h1 {
 		font-size: 0.8em;
-/*		padding: 0 24px;*/
 	}
 	
 	.box-content {
@@ -755,39 +696,13 @@ i.fa-angle-double-up {
 	
 	h3 {
 		margin: 5px;
-		font-size: 16px;
 		text-align: center;
+		font-size: 16px;
 	}
-	
-/*
-	.section_1 {
-		min-height: 350px;
-*/
-/*		height: 80vh;*/
-/*	}*/
-/*
-	
-	.section_2,
-	.section_3 {
-		width: 100%;
-		min-height: 350px;
-		height: 100vh;
-	}
-*/
-	
-/*
-	.row {
-		height: 100vh;
-	}
-*/
 	
 	.col-s-12 {
-/*
-		height: 45%;
-		width: 95%;
-*/
-		padding: 20px;
 		display: flex;
+		padding: 20px;
 	}
 	
 	.col-s-12 > h3 {
@@ -802,11 +717,23 @@ i.fa-angle-double-up {
 	#box, 
 	#box1, 
 	#box2 {
-		width: 200px;
-    	height: 250px;
+		width: 230px;
+    	height: 300px;
     	margin: 20px 5px 10px 5px;
 		perspective: 300px;
 		-webkit-perspective: 300px;
+	}
+	
+	#front {
+		background: rgba(28, 28, 28, 0.9);
+	}
+
+	#front1 {
+		background: rgba(28, 28, 28, 0.9);
+	}
+
+	#front2 {
+		background: rgba(28, 28, 28, 0.9);
 	}
 	
 	#front > h3, 
@@ -815,41 +742,39 @@ i.fa-angle-double-up {
 		position: relative;
     	top: 0%;
     	transform: translateY(0%);
-		font-size: 0.9em;
     	width: 100px;
     	margin-top: 10px;
 		margin-bottom: 0;
 		margin-left: auto;
     	padding: 3px;
+		font-size: 0.9em;
 	}
 	
 	#front > p,
 	#front1 > p,
 	#front2 > p {
+		margin: 10px 10px 10px 18px;
+		font-size: 0.9em;
 		visibility: visible;
 		text-align: left;
-		margin: 10px;
-		font-size: 0.8em;
-		line-height: 0.98em;
 	}
 	
 	#back > p, 
 	#back1 > p, 
 	#back2 > p {
-		font-size: 14px;
 		line-height: 15px;
+		font-size: 14px;
 	}
 	
 	
 	form {
-/*		height: inherit;*/
 		width: auto;
 	}
 	
 	.form-control {
-		font-size: 14px;
-		padding: 2px 6px;
 		height: 34px;
+		padding: 2px 6px;
+		font-size: 14px;
 	}
 	
 	.form-group > button {
@@ -858,10 +783,10 @@ i.fa-angle-double-up {
 	
 	button {
 		display: inline-block;
+		min-height: 30px;
 		margin: 4px 2px;
 		padding: 5px;
 		font-size: 0.8em;
-		min-height: 30px;
 	}
 	
 	img {
