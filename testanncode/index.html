@@ -1,15 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110729280-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-110729280-1');
-</script>
 <meta charset="utf-8">
 <meta name="Description" content="Portfolio Anna Bartkowiak">
 <meta name="Keywords" content="Portfolio AnnCode, Web Developer, Front-end Developer, Anna Bartkowiak">
@@ -20,26 +11,6 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--
-<script>
-$(document).ready(function() {
-  $("html").on("submit","#contact_form",function(e){
-    e.preventDefault();
-    $("#send_form_status").html('').hide();
-    var data=$("#contact_form").serialize();
-    $.post("/send_form.php",data,function(res){
-      $("#send_form_status").html(res.msg).show();
-      if(res.status==1){ 
-        $("#contact_form")[0].reset();
-      } 
-    });
-  });
-});
-</script>
--->
 </head>
 <body>
 	<header id="item1">
@@ -113,18 +84,20 @@ $(document).ready(function() {
 <!--Menu fixed to left-->
 		<div class="navbar">
 			<ul>
-				<a href="#item1" class="menu active"><li>1</li></a>
-				<a href="#item2" class="menu"><li>2</li></a>
-				<a href="#item3" class="menu"><li>3</li></a>
-				<a href="#item4" class="menu"><li><i class="fa fa-user-o" aria-hidden="true"></i></li></a>
-				<a href="#item5" class="menu"><li><i class="fa fa-envelope-o" aria-hidden="true"></i></li></a>
+				<li><a href="#item1" class="menu">1</a></li>
+				<li><a href="#item2" class="menu">2</a></li>
+				<li><a href="#item3" class="menu">3</a></li>
+				<li><a href="#item4" class="menu"><i class="fa fa-user-o" aria-hidden="true"></i>
+				</a></li>
+				<li><a href="#item5" class="menu"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+				</a></li>
 			</ul>
 		</div>
 	</header>
 	
 <!--Section jumbotron-->
 	<section class="jumbotron">
-		<h1>Cześć, nazywam się Anna Bartkowiak i jestem Front-end Developerem</h1>
+		<h1 class="animated fadeInRight">Cześć, nazywam się Ania Bartkowiak i jestem junior Front-end Developerem</h1>
 	</section>
 	
 <!--Section 1 - project Brand1-->
@@ -133,65 +106,95 @@ $(document).ready(function() {
 			<div class="col-l-offset-1 col-s-offset-0"></div>
 			<div class="col-l-5 col-m-5 col-s-12">
 				<div class="box-content">
-					<h3>Projekt dla gabinetu kosmetycznego:</h3>
-					<p>html5, css3, rwd,<br> node.js, npm, webpack,<br> gulp, bem</p>
+					<h3 class="animated fadeInRight">Projekt stworzony z zastosowaniem:</h3>
+					<p class="animated fadeInRight">html5 // css3 // rwd // bootstrap</p>
 					
 					<div class="button">
-						<a href="http://anncode.pl/TotalnaKosmetyka/" target="_blank"><button type="button" class="btn btn-purple">Demo <i class="fa fa-code" aria-hidden="true"></i>
+						<a href="http://thegreenmist.com/brand1/" target="_blank"><button type="button" class="btn btn-purple animated fadeInRight">Demo <i class="fa fa-code" aria-hidden="true"></i>
 						</button></a>
-						<a href="https://github.com/Anna-Bartkowiak/Projekt---Totalna-Kosmetyka" target="_blank"><button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button></a>
+						<a href="https://github.com/Anna-Bartkowiak/Brand1.git" target="_blank"><button type="button" class="btn btn-purple animated fadeInRight">Kod <i class="fa fa-github" aria-hidden="true"></i></button></a>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-l-6 col-m-6 col-s-12">
-			<img src="img/totalna_kosmetyka.png" alt="Projekt Totalna Kosmetyka" title="Projekt Totalna Kosmetyka">
+			<img src="img/brand1.png" alt="Projekty" title="Projekt1" class="animated fadeInRight">
 			</div>
-		</div>	
-	</section>
 
-<!--Section 2 - project Zielono mi-->
-	<section  id="item2" class="section_2">
-		<div class="row">
-			<div class="col-l-offset-1 col-s-offset-0"></div>
-			<div class="col-l-5 col-m-5 col-s-12">
-				<div class="box-content">
-					<h3>Projekt portfolio Designera <br>stworzony z zastosowaniem:</h3>
-					<p>html5, css3, rwd, mixitup</p>
-					
-					<div class="button">
-						<a href="http://adambartoszewski.pl" target="_blank"><button type="button" class="btn btn-purple">Live <i class="fa fa-code" aria-hidden="true"></i>
-						</button></a>
-						<a href="https://github.com/Anna-Bartkowiak/Adam-portfolio" target="_blank"><button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button></a>
-					</div>
+			<div class="row_icon">
+				<div class="col-l-12">
+					<a href="#item2">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle" class="fa fa-angle-down"></i>
+						</button>
+					</a>
 				</div>
-			</div>
-
-			<div class="col-l-6 col-m-6 col-s-12">
-			<img src="img/adam_portfolio_v02.png" alt="Projekt portfolio Designera" title="Projekt portfolio Designera">
 			</div>
 		</div>	
 	</section>
 	
-<!--Section 3 - project Zielono mi-->
-	<section  id="item3" class="section_3">
+<!--Section 2 - project Zielono mi-->
+	<section  id="item2" class="section_2">
 		<div class="row">
 			<div class="col-l-offset-1 col-s-offset-0"></div>
 			
 			<div class="col-l-5 col-m-5 col-s-12">
 				<div class="box-content">
-					<h3>Projekt stworzony z zastosowaniem:</h3>
-					<p>html5, css3, rwd</p>
+					<h3 class="animated fadeInRight">Projekt stworzony z zastosowaniem:</h3>
+					<p class="animated fadeInRight">html5 // css3 // rwd // bootstrap</p>
 				
 					<div class="button">
-						<a href="http://anncode.pl/zielono-mi/" target="_blank"><button type="button" class="btn btn-purple"> Demo <i class="fa fa-code" aria-hidden="true"></i></button></a>
-						<a href="https://github.com/Anna-Bartkowiak/Zielono-mi-my-first-site.git" target="_blank"><button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button></a>
+						<a href="http://thegreenmist.com/zielono-mi/" target="_blank"><button type="button" class="btn btn-purple animated fadeInRight"> Demo <i class="fa fa-code" aria-hidden="true"></i></button></a>
+						<a href="https://github.com/Anna-Bartkowiak/Zielono-mi.git" target="_blank"><button type="button" class="btn btn-purple animated fadeInRight">Kod <i class="fa fa-github" aria-hidden="true"></i></button></a>
 					</div>
 				</div>
 			</div>
 			
 			<div class="col-l-6 col-m-6 col-s-12">
-			<img src="img/zielono-mi1.png" alt="Projekt My first site" title="Projekt My first site">
+			<img src="img/zielono-mi1.png" alt="Projekty" title="Projekt2" class="animated fadeInRight">
+			</div>
+			
+			<div class="row_icon">
+				<div class="col-l-12">
+					<a href="#item3">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle light-blue" class="fa fa-angle-down"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!--Section 3-->
+	<section id="item3" class="section_3">
+		<div class="row">
+			<div class="col-l-offset-1 col-s-offset-0"></div>
+			<div class="col-l-5 col-m-5 col-s-12">
+				<div class="box-content">
+					<h3>Projekt stworzony z zastosowaniem:</h3>
+					<p>html5 // css3 // rwd</p>
+					
+					<div class="button">
+						<button type="button" class="btn btn-purple">Demo <i class="fa fa-code" aria-hidden="true"></i>
+						</button>
+						<button type="button" class="btn btn-purple">Kod <i class="fa fa-github" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-l-6 col-m-6 col-s-12">
+			<img src="img/brand1.png" alt="Projekty" title="Projekt3">
+			</div>
+			
+			<div class="row_icon">
+				<div class="col-l-12">
+					<a href="#item4">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle blue" class="fa fa-angle-down"></i>
+						</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -206,12 +209,9 @@ $(document).ready(function() {
 						<div id="card">
 							<div id="front">
 								<h3>O mnie</h3>
-								<p>Pochodzę ze Szczecinia, a od 3 lat mieszkam w Warszawie. <br><br>Ukończyłam intensywny Bootcamp w szkole Kodilla. Wiedzę czerpię z kursów internetowych, książek, dokumentacji i wielu innych dostępnych materiałów. Interesuję się rozwojem osobistym, zdrowym odżywianiem oraz aktywością fizyczną. <br><br>Dla relaksu czytam kryminały.</p>
+								<p>Pochodzę ze Szczecinia. Od 2 lat mieszkam w Warszawie. <br><br>Od pół roku uczę się programowania Front-endowego. Wiedzę czerpię z kursów internetowych, książek, artykułów i wielu innych dostępnych materiałów. Interesuję się zdrowym odżywianiem, aktywością fizyczną oraz rozwojem osobistym. <br><br>Dla relaksu czytam kryminały.</p>
 							</div>
-
-							<div id="back">
-								<p>Pochodzę ze Szczecinia, a od 3 lat mieszkam w Warszawie. <br><br>Ukończyłam intensywny Bootcamp w szkole Kodilla. Wiedzę czerpię z kursów internetowych, książek, dokumentacji i wielu innych dostępnych materiałów. Interesuję się rozwojem osobistym, zdrowym odżywianiem oraz aktywością fizyczną. <br><br>Dla relaksu czytam kryminały.</p>
-							</div>
+							<div id="back"><p>Pochodzę ze Szczecinia. Od 2 lat mieszkam w Warszawie. <br><br>Od pół roku uczę się programowania Front-endowego. Wiedzę czerpię z kursów internetowych, książek, artykułów i wielu innych dostępnych materiałów. Interesuję się zdrowym odżywianiem, aktywością fizyczną oraz rozwojem osobistym. <br><br>Dla relaksu czytam kryminały.</p></div>
 						</div>
 					</div>
 					
@@ -219,12 +219,9 @@ $(document).ready(function() {
 						<div id="card1">
 							<div id="front1">
 								<h3>Co robię</h3>
-								<p>Ćwiczę tnąc layouty z PSD do HTML&CSS czy robiąc kursy internetowe. Ostatni mój projekt zrobiłam na podstawie jednego z nich z użyciem npm, node.js, webpack, gulp. <br><br>Dlaczego programowanie? Ponieważ chcę tworzyć, rozwiązywać zagadki, rozwijać się i czerpać z tego przyjemność i satysfakcję.</p>
+								<p>Ukończyłam intensywny Bootcamp w szkole programowania Kodilla. <br><br>Języki i technologie, które poznałam: HTML, CSS, Bootstrap, RWD, GIT, DOM, Javascript, jQuery, AJAX. <br><br>Dlaczego programowanie? Ponieważ pragnę się rozwijać, tworzyć ładne strony, dobrze zarabiać i czerpać z tego przyjomność.</p>
 							</div>
-
-							<div id="back1">
-								<p>Ćwiczę tnąc layouty z PSD do HTML&CSS czy robiąc kursy internetowe. Ostatni mój projekt zrobiłam na podstawie jednego z nich z użyciem npm, node.js, webpack, gulp. <br><br>Dlaczego programowanie? Ponieważ chcę tworzyć, rozwiązywać zagadki, rozwijać się i czerpać z tego przyjemność i satysfakcję.</p>
-							</div>
+							<div id="back1"><p>Ukończyłam intensywny Bootcamp w szkole programowania Kodilla. <br><br>Języki i technologie, które poznałam: HTML, CSS, Bootstrap, RWD, GIT, DOM, Javascript, jQuery, AJAX. <br><br>Dlaczego programowanie? Ponieważ pragnę się rozwijać, tworzyć ładne strony, dobrze zarabiać i czerpać z tego przyjomność.</p></div>
 						</div>
 					</div>
 					
@@ -232,27 +229,34 @@ $(document).ready(function() {
 						<div id="card2">
 							<div id="front2">
 								<h3>Moje plany</h3>
-								<p>W przyszłości chcę stworzyć aplikację dla osób chorych na zapalenie tarczycy. Niestety nauka bez wsparcia nie należy do łatwych. Dlatego chciałabym zdobyć doświadczenie pod okiem profesjonalistów, aby móc tworzyć zaawansowane strony i aplikacje. <br><br>Zależy ci na zmotywowanym pracowniku do dłuższej współpracy? Koniecznie się do mnie odezwij chętnie z tobą porozmawiam!</p>
+								<p>W najbliższej przyszłości chciałabym doszlifować swoje umiejętności pod okiem profesjonalistów oraz opanować Javascript w stopniu zaawansowanym. <br><br>Zależy ci na zmotywowanym pracowniku do dłuższej współpracy? Koniecznie się do mnie odezwij chętnie z tobą porozmawiam!</p>
 							</div>
-
-							<div id="back2">
-								<p>W przyszłości chcę stworzyć aplikację dla osób chorych na zapalenie tarczycy. Niestety nauka bez wsparcia nie należy do łatwych. Dlatego chciałabym zdobyć doświadczenie pod okiem profesjonalistów, aby móc tworzyć zaawansowane strony i aplikacje. <br><br>Zależy ci na zmotywowanym pracowniku do dłuższej współpracy? Koniecznie się do mnie odezwij chętnie z tobą porozmawiam!</p>
-							</div>
+							<div id="back2"><p>W najbliższej przyszłości chciałabym doszlifować swoje umiejętności pod okiem profesjonalistów oraz opanować Javascript w stopniu zaawansowanym. <br><br>Zależy ci na zmotywowanym pracowniku do dłuższej współpracy? Koniecznie się do mnie odezwij chętnie z tobą porozmawiam!</p></div>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
+			
+			<div class="row_icon">
+				<div class="col-l-12">
+					<a href="#item5">
+						<button type="button" class="btn btn-angle">
+							<i id="icon-angle pink" class="fa fa-angle-down"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+			
 		</div>
 	</section>
 	
 <!--Section 5 - Contact form-->
 	<section id="item5" class="section_5">
 		<div class="row">
-			<div class="col-l-offset-1 col-m-offset-1 col-s-offset-0"></div>
-			
-			<div class="col-l-5 col-m-10 contact col-s-12">
+			<div class="col-l-offset-1 col-s-offset-0"></div>
+			<div class="col-l-6 col-m-6 col-s-12">
 				<div class="profil_picture">
-					<img src="img/zdjecie-profilowe2.jpg" alt="Ania Bartkowiak" title="Ania Bartkowiak" class="animated bounceIn">
+					<img src="img/zdjecie profilowe2.jpg" alt="Ania Bartkowiak" title="Ania Bartkowiak" class="animated bounceIn">
 				</div>
 				
 				<h2><span style="letter-spacing: -2px; margin: 0 5px;"> &mdash; </span>Ania Bartkowiak<span style="letter-spacing: -2px; margin: 0 5px;"> &mdash; </span></h2>
@@ -270,7 +274,7 @@ $(document).ready(function() {
 
 					<div class="wrapper">
 						<i class="fa fa-address-book animated pulse" aria-hidden="true"></i>
-						<a href="mailto:anncodewaw@gmail.com">anncodewaw@gmail.com</a>
+						<a href="mailto:aniabartkowiak19@op.pl">bartkowiak19@op.pl</a>
 					</div>
 
 					<div class="wrapper">
@@ -279,34 +283,37 @@ $(document).ready(function() {
 					</div>
 				</div>
 			</div>
+			<div class="col-l-5 col-m-5 pink col-s-12">
+			<h2>Kontakt</h2>
+					<form class="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+
+						<div class="form-group">
+							<input type="name" class="form-control" id="name" placeholder="Name">
+						</div>
+
+						<div class="form-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+						</div>
+						
+						<div class="form-group">
+							<button type="submit" class="btn btn-info ">Wyślij</button>
+						</div>
+					</form>
+			</div>
 			
-			<div class="col-l-6 col-m-12 pink col-s-12">
-				<h2 class="section_5--contant">Kontakt</h2>
-				<div id="send_form_status"></div>
-				<form class="form" action="/send_form.php" method="post" id="contact_form">
-					<div class="form-group">
-						<input type="text" name="email" class="form-control" id="email" placeholder="Email" pattern="[^ @]*@[^ @]*" title="Enter the correct email format." required>
-					</div>
-
-					<div class="form-group">
-						<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-					</div>
-
-					<div class="form-group">
-						<textarea name="message" id="message" class="form-control" rows="5" required></textarea>
-					</div>
-
-					<div class="form-group">
-						<button type="submit" class="btn btn-purple submit">Wyślij</button>
-					</div>
-				</form>
+			<div class="row_icon">
+				<div class="col-l-12 black">
+					<a href="#item1">
+						<button type="button" class="btn btn-angle ">
+							<i id="icon-angle violet" class="fa fa-angle-double-up"></i>
+						</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
-	
-	<a href="#" class="go-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-	
-	<script src="./js/scrollTopAn.js"></script>
-	<script src="./js/contact-form.js"></script>
 </body>
 </html>

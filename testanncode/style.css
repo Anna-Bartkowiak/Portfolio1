@@ -67,7 +67,7 @@ header {
 	font-size: 16px;
 	position: fixed;
     left: 0;
-	top: 180px;
+	top: 170px;
 }
 
 ul {
@@ -95,13 +95,16 @@ svg {
 	height: 49.5px;
 }
 
+.navbar li:visited {
+	background-color: #373737;
+}
+
 .navbar li:hover {
 	background-color: #7C7E84;
 }
 
-.navbar li:visited {
-	color: #373737;
-	background-color: #FFFFFF;
+.navbar li:active {
+	background-color: #373737;
 }
 
 /*Section jumbotron*/
@@ -179,28 +182,16 @@ p {
 .col-l-6,
 .col-l-5 {
 	height: 100%;
-	min-height: 600px;
-/*	padding: 15px 15px;*/
+	min-height: 410px;
+	padding: 15px 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.col-l-6 {
-	padding: 30px 50px 30px 0;
-}
-
-.col-l-10 {
-	min-height: 600px;
-}
-
 .pink {
 	display: block;
-	padding: 60px 10px;
-}
-
-.contact {
 	padding: 40px;
 }
 
@@ -218,14 +209,14 @@ img {
 
 .box-content {
 	min-height: 300px;
-/*	padding: 0 20px;*/
+	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
 .box-content p {
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .text,
@@ -236,8 +227,7 @@ img {
 }
 
 .text{
-	min-height: 600px;
-	align-content: center;
+	height: inherit;
 }
 
 .text > p {
@@ -303,28 +293,12 @@ button:hover {
 	color: #373737;
 }
 
-.go-top {
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	text-decoration: none;
-	color: #fff;
-	background-color: rgb(0, 0, 0, 0.3);
-	font-size: 16px;
-	padding: 1em;
-	display: none;
-}
-
-.go-top:hover {
-	background-color: #717171;
-}
-
 #box,
 #box1,
 #box2 {
 	width:300px;
 	height:350px;
-	margin: auto 15px;
+	margin: 50px 15px 30px 15px;
 	perspective: 400px;
 	-webkit-perspective: 400px;
 }
@@ -440,9 +414,10 @@ button:hover {
 }
 
 .profil_picture > img {
-	max-height: 150px;
+	max-height: 200px;
 	max-width: 150px;
 	border-radius: 50%;
+	margin-top: 20px;
 	-webkit-animation-duration: 15s;
   	-webkit-animation-delay: 1s;
 }
@@ -467,12 +442,8 @@ button:hover {
 	font-size: 18px;
 }
 
-.section_5--contant {
-	margin-top: 40px;
-}
-
 .form-control {
-    width: 80%;
+    width: 100%;
     padding: 3px 6px;
 	margin: 3px;
     font-size: 16px;
@@ -524,14 +495,6 @@ i.fa-angle-double-up {
 	color: #FFF;
 }
 
-@media (min-width: 769px) and (max-width: 1190px) {
-	#box, 
-	#box1, 
-	#box2 {
-		margin: 30px;
-	}
-}
-
 @media (min-width: 501px) and (max-width: 768px) {
 	
 	[class*="col-"] {
@@ -568,24 +531,22 @@ i.fa-angle-double-up {
 	.navbar {
     	position: fixed;
     	left: 0;
-		top: 120px; 
+		top: 105px; 
 	}
-/*
 	
 	.navbar li {
 		height: 30px;
 		line-height: 30px;
 	}
-*/
 	
 	.jumbotron {
-		padding: 18px;
+		padding: 10px;
 	}
 	
 	.jumbotron > h1,
 	.navbar li,
 	h2 {
-		font-size: 18px;
+		font-size: 0.95em;
 	}
 	
 	.jumbotron > h1 {
@@ -604,12 +565,6 @@ i.fa-angle-double-up {
 		min-height: 0px;
 	}
 	
-	.col-m-12 {
-		align-content: center;
-		display: flex;
-		justify-content: center;
-	}
-	
 	p {
 		margin: 20px;
 	}
@@ -618,29 +573,12 @@ i.fa-angle-double-up {
 	button,
 	.form-control,
 	.wrapper > a {
-		font-size: 14px;
-	}
-	
-	.form-control {
-		width: 350px;
-	}
-/*
-	.form {
-		align-items: center;
-	}
-*/
-	
-	h2 {
-		text-align: center;
+		font-size: 0.9em;
 	}
 	
 	button {
 		width: 80px;
 		padding: 4px;
-	}
-	
-	.submit {
-		width: 100%;
 	}
 	
 	.box-content {
@@ -688,23 +626,6 @@ i.fa-angle-double-up {
 	#back2 > p {
 		line-height: 16px;
 	}
-
-	.pink {
-		margin: 0 10px;
-		padding: 20px 10px;
-	}
-
-	.section_5--contant {
-		margin-top: 0;
-	}
-	
-	.go-top {
-		position: fixed;
-		bottom: 6px;
-		right: 6px;
-		font-size: 13px;
-		padding: 12px 13px;
-	}
 	
 }
 	
@@ -743,15 +664,10 @@ i.fa-angle-double-up {
 	.col-s-offset-11 {margin-left: 91.66%;}
 	
 	.navbar {
-		top: 100px;
+		top: 130px;
 	}
 	
-	.navbar a li {
-		height: 40px;
-		line-height: 40px;
-	}
-	
-	.navbar > ul > a > li {
+	.navbar > ul > li {
 		padding: 0px 10px;
 		font-size: 16px;
 	}
@@ -763,15 +679,14 @@ i.fa-angle-double-up {
 	}
 	 
 	.jumbotron > h1 {
-		line-height: 22px;
+		font-size: 0.8em;
 	}
 	
 	.box-content {
-		min-height: 190px;
+		min-height: 200px;
 	}
 	
 	.text {
-		height: inherit;
 		padding: 0 20px;
 	}
 	
@@ -782,12 +697,12 @@ i.fa-angle-double-up {
 	h3 {
 		margin: 5px;
 		text-align: center;
+		font-size: 16px;
 	}
 	
 	.col-s-12 {
 		display: flex;
-		padding: 10px;
-		margin-top: 50px;
+		padding: 20px;
 	}
 	
 	.col-s-12 > h3 {
@@ -797,16 +712,6 @@ i.fa-angle-double-up {
 	
 	p {
 		margin: 0px 10px;
-	}
-	
-	.navbar > ul > li,
-	p,
-	button,
-	h3,
-	.jumbotron > h1,
-	.form-control,
-	.wrapper > a {
-		font-size: 14px;
 	}
 	
 	#box, 
@@ -842,14 +747,14 @@ i.fa-angle-double-up {
 		margin-bottom: 0;
 		margin-left: auto;
     	padding: 3px;
-/*		font-size: 14em;*/
+		font-size: 0.9em;
 	}
 	
 	#front > p,
 	#front1 > p,
 	#front2 > p {
 		margin: 10px 10px 10px 18px;
-		font-size: 13px;
+		font-size: 0.9em;
 		visibility: visible;
 		text-align: left;
 	}
@@ -858,34 +763,18 @@ i.fa-angle-double-up {
 	#back1 > p, 
 	#back2 > p {
 		line-height: 15px;
-		font-size: 13px;
-	}
-	
-	.profil_picture > img {
-		height: 150px;
-		width: 150px;
-	}
-	
-	form {
-		width: 70%;
-	}
-	
-/*
-	.form-control {
 		font-size: 14px;
 	}
-*/
+	
+	
+	form {
+		width: auto;
+	}
 	
 	.form-control {
-		width: 100%;
-	}
-
-	.section_5--contant {
-		margin-top: 0;
-	}
-	
-	.submit {
-		width: 100%;
+		height: 34px;
+		padding: 2px 6px;
+		font-size: 14px;
 	}
 	
 	.form-group > button {
@@ -895,22 +784,14 @@ i.fa-angle-double-up {
 	button {
 		display: inline-block;
 		min-height: 30px;
-		width: 80px;
 		margin: 4px 2px;
 		padding: 5px;
-	}
-	
-	.go-top {
-		position: fixed;
-		bottom: 6px;
-		right: 6px;
-		font-size: 13px;
-		padding: 12px 13px;
+		font-size: 0.8em;
 	}
 	
 	img {
 		height: 100%;
 		width: 90%;
-		margin: 10px 0;
+		margin: 30px 0;
 	}
 }

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+
+.col-m-1 {width: 8.33%;} 
+.col-m-2 {width: 16.66%;} 
+.col-m-3 {width: 25%;} 
+.col-m-4 {width: 33.33%;} 
+.col-m-5 {width: 41.66%;} 
+.col-m-6 {width: 50%;} 
+.col-m-7 {width: 58.33%;} 
+.col-m-8 {width: 66.66%;} 
+.col-m-9 {width: 75%;} 
+.col-m-10 {width: 83.33%;} 
+.col-m-11 {width: 91.66%;} 
+.col-m-12 {width: 100%;} 
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1432251407527-504a6b4174a2?dpr=2.5&auto=format&fit=crop&w=1080&h=NaN&q=80&cs=tinysrgb&crop=");
+
+    /* Set a specific height */
+    /*max-height: 100vh;*/
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: luminosity;
+    opacity: 0.1;
+}
+
+.hero {
+	height: 450px;
+	background: url("https://images.unsplash.com/photo-1469559845082-95b66baaf023?dpr=2.5&auto=format&fit=crop&w=1080&h=NaN&q=80&cs=tinysrgb&crop=");
+	background-position: center;
+	background-size: cover;
+}
+
+.slogan {
+	max-width: 300px;
+	float: left;
+	margin-left: 18vh;
+	margin-top: 25vh;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.row {
+	position: relative;
+	padding-top: 30px;
+}
+
+.col-m-6 {
+	color: #60646D;
+	padding: 17.5px;
+}
+
+.a {
+	padding-top: 150px;
+}
+
